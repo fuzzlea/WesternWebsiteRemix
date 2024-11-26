@@ -1,7 +1,11 @@
+'use client';
+
+import { scrollTo } from "@/scripts/scrollToFunctions"
+
 export default function NavBar() {
 
       return (
-            <div className="navbar h-20 bg-primary text-neutral">
+            <div className="navbar sticky top-0 z-50 h-20 bg-primary text-neutral shadow-lg">
                   <div className="navbar-start">
                         <div className="dropdown">
                               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -21,10 +25,10 @@ export default function NavBar() {
                               <ul
                                     tabIndex={0}
                                     className="menu menu-sm dropdown-content text-primary bg-base-100 rounded-box z-[1] mt-3 w-52 p-2">
-                                    <li><a>About Us</a></li>
-                                    <li><a>Extra-Curriculars</a></li>
-                                    <li><a>Academics</a></li>
+                                    <li><a onClick={() => scrollTo("OUR_MISSION_CONTAINER")}>Our Mission</a></li>
                                     <li><a>Resources</a></li>
+                                    <li><a>Academics</a></li>
+                                    <li><a>Athletics</a></li>
                                     <li><a target="_blank" href="https://bcschools.net/en-US">BCPS</a></li>
                               </ul>
                         </div>
