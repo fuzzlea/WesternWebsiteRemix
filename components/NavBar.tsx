@@ -1,7 +1,7 @@
 export default function NavBar() {
 
       return (
-            <div className="navbar bg-primary text-neutral">
+            <div className="navbar h-20 bg-primary text-neutral">
                   <div className="navbar-start">
                         <div className="dropdown">
                               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -22,13 +22,15 @@ export default function NavBar() {
                                     tabIndex={0}
                                     className="menu menu-sm dropdown-content text-primary bg-base-100 rounded-box z-[1] mt-3 w-52 p-2">
                                     <li><a>About Us</a></li>
+                                    <li><a>Extra-Curriculars</a></li>
+                                    <li><a>Academics</a></li>
                                     <li><a>Resources</a></li>
                                     <li><a target="_blank" href="https://bcschools.net/en-US">BCPS</a></li>
                               </ul>
                         </div>
                   </div>
                   <div className="navbar-center">
-                        <a href="/" className="btn btn-ghost text-xl">Bay City Western</a>
+                        <a href="/" className="btn btn-ghost text-2xl font-bold duration-100 hover:scale-110 active:scale-90"><img src="/LogoSquare.png" className="w-auto h-full scale-125 mr-4" />Bay City Western</a>
                   </div>
                   <div className="navbar-end">
                         <div className="dropdown">
