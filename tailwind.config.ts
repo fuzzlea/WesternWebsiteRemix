@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc/generated-native";
 import type { Config } from "tailwindcss";
 
 module.exports = {
@@ -10,6 +11,21 @@ module.exports = {
             extend: {
                   fontFamily: {
                         poppins: ['Poppins']
+                  },
+                  animation: {
+                        zoomIn: 'zoomIn 0.5s ease-out'
+                  },
+                  keyframes: {
+                        zoomIn: {
+                              '0%': {
+                                    top: '10rem',
+                                    opacity: '0'
+                              },
+                              '100%': {
+                                    top: '0rem',
+                                    opacity: '1'
+                              },
+                        }
                   }
             }
       },

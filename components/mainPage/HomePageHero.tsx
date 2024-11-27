@@ -6,7 +6,7 @@ export default function HomePageHero() {
 
       return (
             <div
-                  className="hero min-h-screen z-10"
+                  className="hero min-h-screen z-10 animate-zoomIn"
                   style={{
                         backgroundImage: "url(https://www.mlive.com/resizer/v2/FMQCAKD32FCYFOVCKVFQGN5M4Q.JPG?auth=b456e11978ef9762d5a69a2e7190c2f1072a7fffcdee2eb537f1d0838aef22b8&width=1280&quality=90)",
                   }}>

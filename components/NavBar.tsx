@@ -33,10 +33,10 @@ export default function NavBar() {
 
       return (
             <div
-                  className={`fixed w-full flex justify-center items-center z-50 duration-200 ease-out ${showNavBar ? 'top-0 opacity-100 scale-100' : '-top-40 opacity-0 scale-90'
+                  className={`fixed w-full flex justify-center items-center z-50 duration-200 ease-out ${showNavBar ? 'top-0 opacity-100 scale-100' : '-top-20 opacity-0 scale-90'
                         }`}
             >
-                  <div className="navbar w-11/12 absolute top-3 h-20 rounded-full bg-base-100 text-neutral shadow-xl">
+                  <div className="navbar w-11/12 absolute top-3 h-20 rounded-full bg-gradient-to-t from-base-300 from-75% to-base-100 text-neutral shadow-xl">
                         <div className="navbar-start">
                               <div className="dropdown">
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle text-primary">
@@ -62,7 +62,9 @@ export default function NavBar() {
                                           <li>
                                                 <a onClick={() => scrollTo('OUR_MISSION_CONTAINER')}>Our Mission</a>
                                           </li>
-                                          <li><a>Resources</a></li>
+                                          <li>
+                                                <a onClick={() => scrollTo("RESOURCES_CONTAINER")}>Resources</a>
+                                          </li>
                                           <li><a>Academics</a></li>
                                           <li><a>Athletics</a></li>
                                           <br />
@@ -86,7 +88,7 @@ export default function NavBar() {
                         </div>
                         <div className="navbar-end">
                               <div className="dropdown">
-                                    <div tabIndex={1} role="button" className="btn rounded-2xl">
+                                    <div tabIndex={1} role="button" className="btn rounded-2xl mr-3">
                                           Login
                                     </div>
                                     <ul

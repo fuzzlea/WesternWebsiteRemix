@@ -13,7 +13,7 @@ const SlideshowInfo = {
       ]
 };
 
-export default function OurMission() {
+export default function Academics() {
       const [isVisible, setIsVisible] = useState(false);
       const missionContainerRef = useRef<HTMLDivElement>(null);
 
